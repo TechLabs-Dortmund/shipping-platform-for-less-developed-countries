@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-1">
-            <a href="#" class="logo"><i class="fas fa-ship"></i>Smart<span>Hub</span></a>
+            <a href="#" class="logo"><i class="fas fa-ship"></i>Tra<span>Del</span></a>
             <form action="" class="search-box-container">
               <input type="search" id="search-box" placeholder="search here">
               <label for="search-box" class="fas fa-search"></label>
@@ -60,110 +60,119 @@
     </section>
 
     <section class="services" id="services">        
-     <div class="sender">
-        <h3>Parcel Sender</h3>
-        <p>Enter Details of parcel:</p>
-
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Parcel departure Country</label>
-
-           <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-           </select>
-
-           <label for="country">Parcel destination Country</label>
-
-           <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-           </select>
-
+      <div class="container">      
+        <form id="form1">
+    
+            <h3>Personal details</h3>
+            <input type="text" placeholder="First Name" required>
+            <input type="tel" placeholder="Surname" required>
            
-  
-            <input type="submit" value="Submit" class="btn-2">
-         </form>
-       </div>
-     </div>
+    
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+    
+        </form>
+    
+        <form id="form2">
+    
+            <h3>Adress details</h3>
+            <input type="text" placeholder="Street, House number" required>
+            <input type="text" placeholder="zip code, city" required>
+            <input type="text" placeholder="Country" required>
+    
+    
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+    
+            </div>
+    
+        </form>
+    
+        <form id="form3">
+    
+            <h3>travel details</h3>
+            <input type="text" placeholder="Take off city, country">
+            <input type="text" placeholder="Destination city, Country">
+            <input type="date" placeholder="dd/mm/yyyy">
+    
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="button" value="submit">Submit</button>
+    
+            </div>
+    
+        </form>
+    
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Name</small></div>
+            <div class="step-col"><small>Address</small></div>
+            <div class="step-col"><small>Travel details</small></div>
+    
+        </div>
+    
+    </div>
 
-     <div class="traveler">
-        <h3>Traveler details</h3>
-        <p>Enter the traveler details:</p>
-
-        <div class="container">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" class="btn-1" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" class="btn-1" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country"> Departure Country</label>
-
-           <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-           </select>
-
-           <label for="country"> Destination Country</label>
-
-           <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-           </select>
-  
-            <input type="submit" value="Submit" class="btn-2">
-         </form>
-       </div>
-     </div>
+    <div class="container">      
+        <form id="form1">
+    
+            <h3>Personal details</h3>
+            <input type="text" placeholder="First Name" required>
+            <input type="tel" placeholder="Surname" required>
+           
+    
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+    
+        </form>
+    
+        <form id="form2">
+    
+            <h3>Adress details</h3>
+            <input type="text" placeholder="Street, House number" required>
+            <input type="text" placeholder="zip code, city" required>
+            <input type="text" placeholder="Country" required>
+    
+    
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+    
+            </div>
+    
+        </form>
+    
+        <form id="form3">
+    
+            <h3>travel details</h3>
+            <input type="text" placeholder="Take off city, country">
+            <input type="text" placeholder="Destination city, Country">
+            <input type="date" placeholder="dd/mm/yyyy">
+    
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="button" value="submit">Submit</button>
+    
+            </div>
+    
+        </form>
+    
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Name</small></div>
+            <div class="step-col"><small>Address</small></div>
+            <div class="step-col"><small>Travel details</small></div>
+    
+        </div>
+    
+    </div>
     </section>
 
 
-    <section class="popular" id="popular"><h1>Popular Destination</h1>
-        
-        <form class="form-inline" action="/action_page.php">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter departure city">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter destination city">                
-            <button type="submit">Submit</button>
-          </form>
-
-          <form class="form-inline" action="/action_page.php">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter departure city">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter destination city">                
-            <button type="submit">Submit</button>
-          </form>
-
-          <form class="form-inline" action="/action_page.php">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter departure city">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter destination city">                
-            <button type="submit">Submit</button>
-          </form>
-
-          <form class="form-inline" action="/action_page.php">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter departure city">
-            <label for="text"></label>
-            <input type="text" id="text-1" placeholder="Enter destination city">                
-            <button type="submit">Submit</button>
-          </form>
-    </section>
+    
 
 
     <section class="contact" id="contact">

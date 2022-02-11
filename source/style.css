@@ -215,85 +215,156 @@
     background-color: #2c2c54;
   }
   
-.services{
-    display: flex;
-    justify-content: space-between;
+
+  .services{
+	background: #674846;
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 3rem;
+	margin: 10px;
 }
-.services .sender{
-    width: 50rem;
-    display: block;
-    border: 0.1rem solid #000;
-    border-radius: 2rem;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.send .container-1{
+	width: 30rem;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	border: 0.1rem solid black;
+	border-radius: 1rem;
 }
-.services .sender h3{
-    padding: 2rem;
-    font-family: Arial;
-    font-size: 2rem;
-    font-weight: 800;
+.send .container-1 h1{
+	text-align: center;
+	text-transform: capitalize;	
+	font-family: Arial;
+	font-weight: bold;
 }
-.services .sender p{
-    padding: 2rem;
-    font-family: Arial;
-    font-size: 1rem;
-    font-weight: 500;
+.send .container-1 h3{
+	text-align: center;
+	color: black;
 }
-.services .traveler{
-    width: 50rem;
-    display: block;
-    border: 0.1rem solid #000;
-    border-radius: 2rem;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.send .container-1 span{
+	color: brown;
 }
-.services .traveler h3{
-    padding: 2rem;
-    font-family: Arial;
-    font-size: 2rem;
-    font-weight: 800;
-}
-.services .traveler p{
-    padding: 2rem;
-    font-family: Arial;
-    font-size: 1rem;
-    font-weight: 500;
+.container{
+
+	width: 360px;
+	height: 460px;
+	margin: 8% auto;
+	background: #a9a9a9;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-   .btn-2{
-    width: 30%;
-    background-color: #d3003f;
-    color: #fff;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-2:hover {
-    background-color: #2c2c54;
-  }
-  
-  div.container {
-    border-radius: 5px;
-    background-color: #666;
-    padding: 20px;
-  }
-.popular{
-    background-color: #000;
+h3{
+
+	text-align: left;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.container form{
+
+	width: 280px;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	transition: .5s;
+	text-align: unset;
+}
+
+form input{
+
+	width: 150px;
+	padding: 10px 5px;
+	margin: 15px 0;
+	border: 0;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+	color: white;
+
+
+}
+
+::placeholder{
+	color: #3b3b3b;
+
+}
+.btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+form button{
+
+	width: 110px;
+	height: 35px;
+	margin: 0 10px;
+	background: #ff004f;
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
+#form2{
+	left: 450px;
+}
+
+#form3{
+	left: 450px;
+}
+
+.step-row{
+	width: 360px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 -1px 5px -1px black;
+	position: relative;
+}
+
+.step-col{
+
+	width: 120px;
+	text-align: center;
+	color: #3b3b3b;
+	position: relative;
+}
+
+#progress{
+
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: #fff;
+}
+small{
+	color: #3b3b3b;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+#progress::after{
+
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid #ff004f;
 }
 
 
