@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tradel smart shipping platform</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- header section starts     -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row">
+
+         <div class="logo">
+            <img src="logo1.jpg">
+         </div>   
+      
+
+         <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>            
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+         </nav>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+         </div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- login form starts -->
+
+<div class="login-form">
+
+   <form action="">
+      <div id="close-login-form" class="fas fa-times"></div>
+      <a href="#" class="logo mr-auto"> <i class="fas fa-user"></i>  </a>
+      <h3>Enter login detail</h3>
+      <input type="email" name="" placeholder="enter your email" id="" class="box">
+      <input type="password" name="" placeholder="enter your password" id="" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="link-btn">
+      <p class="account">don't have an account? <a href="#">create one!</a></p>
+   </form>
+
+</div>
+
+<!-- login form ends -->
+
+<!-- header section ends    -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row align-items-center text-center text-md-left min-vh-100">
+         <div class="col-md-6">
+            <span>Peer 2 Peer Smart shipping</span>
+            <h3>Making it the new Normal</h3>
+            <a href="#" class="link-btn">get started</a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+          
+         <div class="col-md-6">
+            <h1 class="heading" >About Us?</h1>
+            <h3 class="title">Shipping with style</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem laborum itaque. Perspiciatis in veniam illum deserunt, quos animi maiores nisi officiis amet accusantium soluta a, excepturi vero obcaecati nobis.</p>
+            
+            <div class="icons-container">
+               <div class="icons">
+                  <i class="fas fa-check"></i>
+                  <h3>More Income</h3>
+               </div>
+               <div class="icons">
+                  <i class="fas fa-shipping-fast"></i>
+                  <h3>Safe and Fast</h3>
+               </div>
+               <div class="icons">
+                  <i class="fas fa-headset"></i>
+                  <h3>Make money while Travelling</h3>
+               </div>
+            </div>
+         </div>
+      
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+
+  <div class="container-form">
+     <div class="row-1">
+        
+     </div>
+     <div class="row-1">
+      <form id="regForm" action="/action_page.php">
+         <h1>Register:</h1>
+         <!-- One "tab" for each step in the form: -->
+         <div class="tab">Name:
+           <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+           <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+         </div>
+         <div class="tab">Contact Info:
+           <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+           <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+         </div>
+         <div class="tab">Birthday:
+           <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+           <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+           <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+         </div>
+         <div class="tab">Login Info:
+           <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+           <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+         </div>
+         <div style="overflow:auto;">
+           <div style="float:right;">
+             <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+             <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+           </div>
+         </div>
+         <!-- Circles which indicates the steps of the form: -->
+         <div style="text-align:center;margin-top:40px;">
+           <span class="step"></span>
+           <span class="step"></span>
+           <span class="step"></span>
+           <span class="step"></span>
+         </div>
+       </form>
+     </div>
+  </div>
+    
+
+</section>
+
+<!-- services section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+   <h1 class="heading"> Our Team </h1>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="Team-1.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Micheal Majemite</h3>
+            <p>Data Science</p> 
+            <a href="#" class="link-btn">read more</a>           
+         </div>  
+         <div class="icons">
+            <span> <i class="fas fa-calendar"></i> Last update 22nd Feb, 2022 </span>
+            <span> <i class="fas fa-user"></i> by admin </span>
+         </div>       
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="Team-2.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Nele Markert.</h3>
+            <p>Data Science adipisicing elit. Optio, illum?</p>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+         <div class="icons">
+            <span> <i class="fas fa-calendar"></i> Last update 22nd Feb, 2022 </span>
+            <span> <i class="fas fa-user"></i> by admin </span>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="Team-3.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Hikmat.</h3>
+            <p>Web Development (Backend)</p>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+         <div class="icons">
+            <span> <i class="fas fa-calendar"></i> Last update 22nd Feb, 2022 </span>
+            <span> <i class="fas fa-user"></i> by admin </span>
+         </div>
+      </div>
+
+       <div class="box">
+         <div class="image">
+            <img src="Team-4.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Aghughu Paulinus Ayere.</h3>
+            <p>Web Development (Frontend)</p>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+         <div class="icons">
+            <span> <i class="fas fa-calendar"></i> Last update 22nd Feb, 2022 </span>
+            <span> <i class="fas fa-user"></i> by admin </span>
+         </div>
+      </div>
+
+       <div class="box">
+         <div class="image">
+            <img src="Team-5.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Paul Imhomoh.</h3>
+            <p>Data Science</p>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+         <div class="icons">
+            <span> <i class="fas fa-calendar"></i> Last update 22nd Feb, 2022 </span>
+            <span> <i class="fas fa-user"></i> by admin </span>
+         </div>
+      </div>
+
+
+   </div>
+
+</section>
+
+<!-- team section ends -->
+
+<!-- newsletter section starts  -->
+
+<section class="contact" id="contact">
+  <div class="container">
+      <h3>newsletter</h3>
+      <p>subscribe for latest upadates</p>
+      <form action="">
+         <input type="email" name="" placeholder="enter your email" id="" class="email">
+         <input type="submit" value="subscribe" class="link-btn">
+      </form>
+  </div>
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer container">
+
+   <a href="#" class="logo"> <i class="fas fa-shipping-fast"></i> Tradel </a>
+
+   <p class="credit"> Tradel | all rights reserved! </p>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-github"></a>
+   </div>
+   
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
