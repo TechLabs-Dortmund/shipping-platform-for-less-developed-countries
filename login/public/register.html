@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registration Form</title>
+      <link rel="stylesheet" href="signup.css">
+      
+   </head>
+   <body>
+      <!-- menu-bar -->
+      <div class="header-2">
+         <div id="menu-bar" class="fas fa-bars"></div>
+         <nav class="navbar">
+             <a href="/index.html">Home</a>
+             <a href="#services">services</a>
+             <a href="#popular">popular</a>
+             <a href="#contact">contact</a>
+         </nav>
+         
+     </div>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title signup">Signup Form</div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <label for="signup" class="slide signup">Signup</label>
+               <!-- <div class="slider-tab"></div> -->
+            </div>
+            <div class="form-inner">
+               <form action="/register" method="post" class="signup">
+                  <div class="field">
+                     <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Signup">
+                  </div>
+                  <div class="signup-link">
+                     Already a member? <a href="./signin.html">Signin now</a>
+                   </div>
+                                             
+            </div>
+         </div>    
+      </div>
+      <!-- <script>
+         
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script> -->
+   </body>
+</html>
