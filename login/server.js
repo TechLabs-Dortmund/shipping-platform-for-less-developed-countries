@@ -29,7 +29,7 @@ const database = {
          id: "124",
          name: "sally",
          email: "sally@gmail.com",
-         password: "bananas", // we don't use password like this in real life, we hash it 
+         password: "bananas", 
          entries: 0,
          joined: new Date()
       },
