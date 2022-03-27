@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TraDel: Social Shipping platform</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+
+<body>
+
+   <!-- header section starts     -->
+
+   <header class="header fixed-top">
+
+      <div class="container">
+
+         <div class="row">
+
+            <div class="logo">
+               <img src="assets/logo1.jpg">
+            </div>
+
+
+            <nav class="nav">
+               <a href="#home">Home</a>
+               <a href="#about">About</a>
+               <a href="#options">Delivery Options</a>
+               <a href="#FAQ">FAQ</a>
+               <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="icons">
+               <div id="menu-btn" class="fas fa-bars"></div>
+               <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </header>
+
+   <!-- login form starts -->
+
+   <div class="login-form" id="login">
+
+      <form method="GET" action="{{ url_for('login') }}">
+         <div id="close-login-form" class="fas fa-times"></div>
+         <a href="#" class="logo mr-auto"> <i class="fas fa-user"></i> </a>
+         <h3>Enter Login Details</h3>
+         <input type="email" name="" placeholder="Enter your email" id="input-email" class="box">
+         <input type="password" name="" placeholder="Enter your password" id="input-password" class="box">
+         <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+            <!-- <a href="#">forgot password?</a> -->
+         </div>
+
+         <button type="button" onclick="post_login();">Login</button>
+         <!-- <input type="submit" value="Login" class="link-btn"> -->
+         <p class="account">You don't have an account? <a href="#regForm">Create one!</a></p>
+      </form>
+
+   </div>
+
+   <!-- login form ends -->
+
+   <!-- header section ends    -->
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+
+      <div class="container">
+
+         <div class="row align-items-center text-center text-md-left min-vh-100">
+            <div class="col-md-6">
+               <h3><span>TraDel</span></h3>
+               <h3>Let's revolutionize global shipping</h3>
+               <a href="#" class="link-btn">Get started</a>
+            </div>
+         </div>
+
+      </div>
+      <!-- Posting Journey section -->
+      <form action="#exmple.com" method="POST" id="journey" class="journey">
+         <div class="going-form">
+            <input type="text" placeholder="Leaving from">
+            <input type="text" placeholder="Going to">
+            <input type="date" placeholder="Today">
+            <div class="going-submit">
+               <!-- <input type="submit" value="Submit"> -->
+               <button type="button" onclick="submit();">Submit</button>
+            </div>
+         </div>
+      </form>
+
+   </section>
+
+      <!-- home section ends -->
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <div class="container">
+
+         <div class="col-md-8">
+            <h3 class="heading"></h3>
+            <h3 class="title">Use our crowd for shipping!</h3>
+            <p>TraDel is a non-commercial Crowd Shipping platform connecting travelers who have some luggage space left
+               to people who search for an affordable shipping option around the globe. <br>
+               <br>
+               <b>TraDel - Travel Delivery - </b>is the solution for expensive or sometimes unavailable shipping options
+               from commercial providers.
+            </p>
+            <br>
+            <br>
+            <br>
+
+            <h3 class="title">How does it work?</h3>
+            <p>As a sender of a package or traveler delivering it you can post a delivery offer or request on the
+               website or search for it via our search function. Once you found a match, you can privately discuss the
+               shipping conditions. <br>
+               <br>
+               <b>You are the boss! <br>
+                  TraDel is completely free of charge and you can set your own price and conditions.</b>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+         </div>
+         <h3 class="title">What are the benefits?</h3>
+         <p>Sending and delivering with TraDel has multiple benefits:</p>
+         <br>
+         <ul class="list-unstyled" style="font-size: 15px;font-family: sans-serif; color: #666">
+            <li>&#128184 <b>Affordable shipping:</b> Sending would be much cheaper than traditional shipping options.
+               You can directly negotiate your own delivery fee.</li>
+            <br>
+            <li>&#128256 <b>Flexible shipping:</b> Sending with private travelers offers expanded and personalized
+               shipping options to any location someone is traveling to. </li>
+            <br>
+            <li>&#128154 <b> Green shipping:</b> Combining travel and delivery routes can reduce emissions, pollution
+               and noise. </li>
+            <br>
+            <li>&#128077 <b>Do good:</b> Make somebodies day by helping delivering packages to their loved ones. </li>
+            <br>
+            <li>&#129297 <b>Subsidize travel costs:</b> Although it's commercial you can make extra money and thus,
+               compensate some of the travel costs. </li>
+            <br>
+            <li>&#128161 <b>Travel inspiration:</b> No idea where to travel next? Why don't you choose a requested
+               destination and explore places you never though about? </li>
+         </ul>
+         <br>
+         <p>For further questions please have a look at the FAQs or feel free to contact us.</p>
+
+
+
+         <div class="icons-container">
+            <div class="icons">
+               <i class="fas fa-check"></i>
+               <h3>Affordable</h3>
+            </div>
+            <div class="icons">
+               <i class="fas fa-shipping-fast"></i>
+               <h3>Fast</h3>
+            </div>
+            <div class="icons">
+               <i class="fas fa-globe"></i>
+               <h3>Reduce emissions</h3>
+            </div>
+            <div class="icons">
+               <i class="fas fa-headset"></i>
+               <h3>Choose your own conditions</h3>
+            </div>
+         </div>
+      </div>
+
+
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+
+
+   <!-- options section starts  -->
+
+   <section class="options" id="options">
+
+      <div class="container-form">
+
+         <div class="row-1">
+
+         </div>
+         <div class="row-1">
+            <form method="POST" id="regForm" action="{{ url_for('register') }}">
+               <h1>SignUp</h1>
+               <!-- One "tab" for each step in the form: -->
+               <div class="tab">
+                  <p><input placeholder="First name" oninput="this.className = ''" name="fname" id="fname"></p>
+                  <p><input placeholder="Last name" oninput="this.className = ''" name="lname" id="lname"></p>
+                  <p><input placeholder="E-mail" oninput="this.className = ''" name="email" id="email"></p>
+                  <p><input placeholder="Password" oninput="this.className = ''" name="password" type="password" id="password"></p>
+               </div>
+               <div class="tab">Contact Info:
+                  <!-- <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p> -->
+                  <p><input placeholder="Phone Number" oninput="this.className = ''" name="phone" id="phone"></p>
+                  <p><input placeholder="Country" oninput="this.className = ''" name="Country"></p>
+                  <p><input placeholder="City" oninput="this.className = ''" name="City"></p>
+                  
+                  <!-- <p><input placeholder="Destination city" input type="text" oninput="this.className = ''" name="Dcity">
+                  </p> -->
+                  <!-- <p><input placeholder="Date" input type="date" oninput="this.className = ''" name="Date"></p> -->
+               </div>
+               <!-- <div class="tab">Login Info:
+                  <p><input placeholder="Username" oninput="this.className = ''" name="uname"></p>
+                  <p><input placeholder="Password" oninput="this.className = ''" name="pword" type="password"></p>
+                  <select id="country" name="country"></ <p>
+                     <option value="australia">I want to travel with a parcel</option>
+                     </p>
+                     <option value="canada">I am sending a parcel</option>
+                  </select>
+               </div> -->
+               <div style="overflow:auto;">
+                  <div style="float:right;">
+                     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                     <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                     
+                  </div>
+               </div>
+               <!-- Circles which indicates the steps of the form: -->
+               <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <!-- <span class="step"></span>
+                  <span class="step"></span> -->
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <h3>You are looking for a shipping option or plan to travel?</h3>
+      <p style="font-size: 16px;font-family: sans-serif; color: #666">If you want to send a package or plan to travel
+         and have extra luggage space left, please first register using our registration form.</p>
+      <br>
+      <br>
+      <br>
+      <p style="font-size: 16px;font-family: sans-serif; color: #666"> After registration, you can just post a delivery
+         request or travel offer using the shipping form. <br>
+         Please first select if you are looking for a shipping option or if you are offering to deliver, then choose the
+         starting point and destination and your date or period for the delivery. <br>
+         Afterwards, please give information on the package (e.g. approximate size and weight) or the luggage space you
+         have to offer. <br>
+         Login and your post is ready to go! </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p style="font-size: 16px;font-family: sans-serif; color: #666">You can also have a look at available posts and
+         search for shipping options in our search box.</p>
+
+
+   </section>
+
+   <!-- options section ends -->
+
+   <!-- FAQ section starts  -->
+
+   <section class="FAQ" id="FAQ">
+
+      <h1 class="heading"> FAQ </h1>
+
+      <div class="container">
+
+         <div>
+            <p style="font-size: 14px;font-family: sans-serif; color: #666"> <b>Whats TraDel?</b> <br>
+               TraDel is a non-commercial crowd shipping platform and was build in a project from the TechLabs Digital
+               Shaper Program organized by TechLabs Dortmund, Germany in the spirit of Tech for Good.
+               <br>
+               <br>
+               <b>How do I send packages?</b> <br>
+               Please register and login to the website. Then you are able to post a delivery request with information
+               on destination, preferred delivery time, package weight and size. Also, you can search for available
+               offers. Once you find a traveler you discuss all shipping details directly with them.
+               <br>
+               <br>
+               <b>How do I offer a delivery?</b> <br>
+               Please register and login to the website. Then you are able to post a travel offer with information on
+               the journey, travel time as well as your opportunities to carry packages (weight and size maximum). Once
+               you find a sender you discuss all shipping details directly with them.
+               <br>
+               <br>
+               <b>How do I find existing offers or requests for shipping?</b> <br>
+               You can check available delivery requests or travel offers under "Delivery Options" Also, you can post an
+               delivery request or travel offer yourself.
+               <br>
+               <br>
+               <b>Can I cancel my offer or request?</b> <br>
+               As long as you did not agree with a sender or a traveler on a shipping you can cancel your offers and
+               requests at any time. If you have to cancel it while already discussing a shipment with a sender/traveler
+               please communicate this as soon as possible.
+               <br>
+               <br>
+               <b>How do we manage payment?</b> <br>
+               Detailed terms of shipping including the price and payment option are decided by the sender and traveler.
+               You can use different payment options such as bank transfer or PayPal.
+               <br>
+               <br>
+               <b>How much does the shipping cost?</b> <br>
+               TraDel does not dictate the shipping cost nor charge any fees. The shipping price is decided by the
+               sender and traveler. However, keep in mind additional costs such as custom fees.
+               <br>
+               <br>
+               <b>What happens if the package is lost or damaged?</b> <br>
+               Please carefully pack and secure any fragile item and communicate this to the sender before shipping. As
+               traveler, please directly contact the sending and receiving person if there is any problem while
+               delivering the package. TraDel does not provide any warranty or insurance for shipping.
+               <br>
+               <br>
+               <b>How to we manage customs?</b> <br>
+               The sender is responsible to get all information needed for the respective destination country and to
+               fulfill any customs requirements. Please communicate any requirements with the traveler before shipping.
+               <br>
+               <br>
+               <b>What items are allowed to be shipped?</b> <br>
+               It is allowed to ship any non-commercial item on which both sender and traveler agrees on. However, there
+               a few prohibited items due to law or security, i.e. items that violate national or international law or
+               items that violate do not fullfill requirements of the transport companies.
+               <br>
+               <br>
+               <b>What happens with my personal data?</b> <br>
+               The website only stores user information for usage of the website. The website does not use or process
+               these or additional data for any other purpose. Please make sure that your informations are correct and
+               updated. Furthermore, it is prohibited to use other persons identities for transaction or to share other
+               user information with third parties except for transportation or shipping purpose.
+            </p>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- team section ends -->
+
+   <!-- newsletter section starts  -->
+
+   <section class="contact" id="contact">
+      <div class="container">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="link-btn">
+         </form>
+      </div>
+   </section>
+
+   <!-- newsletter section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer container">
+
+      <a href="#" class="logo"> <i class="fas fa-shipping-fast"></i> Tradel </a>
+
+      <p class="credit"> Tradel | all rights reserved! </p>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-linkedin"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-github"></a>
+      </div>
+
+   </section>
+
+   <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+   <script src="js/backend-communication.js"></script>
+</body>
+
+</html>
