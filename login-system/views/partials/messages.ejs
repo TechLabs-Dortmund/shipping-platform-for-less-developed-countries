@@ -1,0 +1,15 @@
+<!-- if there are any errors present, then display the contents of the array with its own paragraph(p) element. -->
+<% if(typeof errors!= 'undefined') { %> <% errors.forEach(function(error){ %>
+<p><%= error.msg %></p>
+<% }) %> <% } %>
+
+<% if(success_msg!= '') { %>
+   <p><%=success_msg %> </p>
+   <% } %>
+
+   <% if(error_msg != '') { %>
+      <%= error_msg %> 
+    <% } %> 
+    <% if(error != '') { %>
+      <%= error %>
+    <% } %>

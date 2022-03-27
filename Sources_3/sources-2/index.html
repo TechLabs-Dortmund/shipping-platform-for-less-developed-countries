@@ -180,7 +180,7 @@
 
      </div>
      <div class="row-1">
-      <form id="regForm" action="/action_page.php">
+      <form id="regForm" action="post">
          <h1>Register:</h1>
          <!-- One "tab" for each step in the form: -->
          <div class="tab">Name:
@@ -190,10 +190,17 @@
          <div class="tab">Contact Info:
            <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p>
            <p><input placeholder="Phone" oninput="this.className = ''" name="phone"></p>
+           <p><input placeholder="City" oninput="this.className = ''" name="City"></p>
+           <p><input placeholder="Destination city"input type="text" oninput="this.className = ''" name="Dcity"></p>
+           <p><input placeholder="Date" input type="date" oninput="this.className = ''" name="Date"></p>
          </div>
          <div class="tab">Login Info:
            <p><input placeholder="Username" oninput="this.className = ''" name="uname"></p>
            <p><input placeholder="Password" oninput="this.className = ''" name="pword" type="password"></p>
+           <select id="country" name="country"></
+          <p><option value="australia">I want to travel with a parcel</option></p>
+          <option value="canada">I am sending a parcel</option>
+          </select>
          </div>
          <div style="overflow:auto;">
            <div style="float:right;">
