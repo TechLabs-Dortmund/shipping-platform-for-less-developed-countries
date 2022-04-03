@@ -2,9 +2,10 @@
 # TraDel: Shipping platform for less developed countries
 Many people leave their home countries temporarily or even permamently for studies abroad, as expats or for other, diverse social or economic reasons. Nowadays, in a highly globalized and digitalized world it is easy to stay in contact with the loved ones at home but it is expensive or in the case of less-developed countries sometimes simply not possible at all to ship private packages, globally. 
 
+
 The solution? 
 
-**TraDel** – Travel Delivery – is a non-commercial Crowd Shipping platform for private shipping connecting travelers who have some luggage space left to people who search for an affordable shipping option around the globe. Using available travel routes for private shipping can open new, more flexible and cheaper shipping options while reducing emissions and allowing travelers to compensate travel costs as well as doing something good. The website has a straightforward structure with a register and login function and the options to post a delivery request or offer and to search for available posts. Once a match is found all shipping conditions including price and date are privately discussed between the users.
+*TraDel* – Travel Delivery – is a non-commercial Crowd Shipping platform for private shipping connecting travelers who have some luggage space left to people who search for an affordable shipping option around the globe. Using available travel routes for private shipping can open new, more flexible and cheaper shipping options while reducing emissions and allowing travelers to compensate travel costs as well as doing something good. The website has a straightforward structure with a register and login function and the options to post a delivery request or offer and to search for available posts. Once a match is found all shipping conditions including price and date are privately discussed between the users.
 
 
 ## How to Setup and Run
@@ -57,17 +58,17 @@ There is a register and login function as well a function for posting delivery r
   
 ## Authors
 
-- [@hikmat](https://www.github.com/hiko91)
-- [@taylan](https://github.com/taylanyild)
-- [@paulinus](https://github.com/PaulAyere)
-- [@nele](https://github.com/NelM3004)
+- [@Hikmat](https://www.github.com/hiko91)
+- [@Taylan](https://github.com/taylanyild)
+- [@Paulinus](https://github.com/PaulAyere)
+- [@Nele](https://github.com/NelM3004)
 - Paul 
 - Michael
 
 
 ## Mentors
-- [@florian](https://github.com/TheMerphin)
-- [@tom](https://github.com/ScholliYT)
+- [@Florian](https://github.com/TheMerphin)
+- [@Tom](https://github.com/ScholliYT)
 
 
   
