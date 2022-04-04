@@ -34,7 +34,7 @@ pip install -r requirements.txt
 Start the webserver with the following command
 
 ```bash
-uvicorn main:app --reload
+uvicorn src.main:app --reload
 ```
 
 

@@ -2,8 +2,6 @@
 
 from sqlalchemy.orm import Session
 
-from src.main import Shipment
-
 from . import models, schemas
 
 #read a single user by ID
@@ -33,7 +31,7 @@ def get_shipments(db: Session, skip: int = 0, limit: int = 100):
 
 #create shipment for user
 def create_user_shipment(db: Session, shipment: schemas.ShipmentCreate, user_id: int):
-    db_shipment = models.Shipment(**Shipment.dict(), owner_id=user_id)
+    db_shipment = models.Shipment(**shipment.dict(), owner_id=user_id)
     db.add(db_shipment)
     db.commit()
     db.refresh(db_shipment)
