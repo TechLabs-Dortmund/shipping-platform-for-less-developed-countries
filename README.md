@@ -32,7 +32,7 @@ uvicorn src.main:app --reload
 
 ## Access
 
-After starting open the following URL: [http://127.0.0.1:8000/static/index.html](http://127.0.0.1:8000/static/index.html)
+After running the project open the following URL: [http://127.0.0.1:8000/static/index.html](http://127.0.0.1:8000/static/index.html)
 
 For getting access to the FastAPI open the following URL: http://127.0.0.1:8000/docs
 
