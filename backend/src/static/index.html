@@ -15,7 +15,7 @@
    <!-- third party js libs  -->
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- custom js file link (some need to be loaded after HTML is built, therefore the defer attribute)  -->
-    <script src="js/script.js" defer></script>
+   <script src="js/script.js" defer></script>
    <script src="js/backend-communication.js"></script>
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
@@ -68,13 +68,12 @@
          <input type="email" name="" placeholder="Enter your email" id="input-email" class="box">
          <input type="password" name="" placeholder="Enter your password" id="input-password" class="box">
          <div class="flex">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">remember me</label>
+            <!-- <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label> -->
             <!-- <a href="#">forgot password?</a> -->
          </div>
 
          <button type="button" onclick="post_login();">Login</button>
-         <!-- <input type="submit" value="Login" class="link-btn"> -->
          <p class="account">You don't have an account? <a href="#regForm">Create one!</a></p>
       </form>
 
@@ -94,7 +93,7 @@
             <div class="col-md-6">
                <h3><span>TraDel</span></h3>
                <h3>Let's revolutionize global shipping</h3>
-               <a href="#" class="link-btn">Get started</a>
+               <a href="#regForm" class="link-btn">Get started</a>
             </div>
          </div>
 
@@ -217,31 +216,18 @@
                <h1>SignUp</h1>
                <!-- One "tab" for each step in the form: -->
                <div class="tab">
-                  <p><input placeholder="First name" oninput="this.className = ''" name="fname" id="fname"></p>
-                  <p><input placeholder="Last name" oninput="this.className = ''" name="lname" id="lname"></p>
-                  <p><input placeholder="E-mail" oninput="this.className = ''" name="email" id="email"></p>
-                  <p><input placeholder="Password" oninput="this.className = ''" name="password" type="password" id="password"></p>
-                  <!-- <button type="button" id="prevBtn" onclick="post_register()">Submit</button>? -->
+                  <p><input placeholder="First name" oninput="this.className = ''" name="fname" id="fname">First name</p>
+                  <p><input placeholder="Last name" oninput="this.className = ''" name="lname" id="lname">Last name</p>
+                  <p><input placeholder="E-mail" oninput="this.className = ''" name="email" id="email">Email</p>
+                  <p><input placeholder="Password" oninput="this.className = ''" name="password" type="password" id="password">Password</p>
+                  
                </div>
                <div class="tab">Contact Info:
-                  <!-- <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p> -->
-                  <p><input placeholder="Phone Number" oninput="this.className = ''" name="phone" id="phone"></p>
-                  <p><input placeholder="Country" oninput="this.className = ''" name="Country"></p>
-                  <p><input placeholder="City" oninput="this.className = ''" name="City"></p>
-                  
-                  <!-- <p><input placeholder="Destination city" input type="text" oninput="this.className = ''" name="Dcity">
-                  </p> -->
-                  <!-- <p><input placeholder="Date" input type="date" oninput="this.className = ''" name="Date"></p> -->
+                  <p><input placeholder="Phone Number" oninput="this.className = ''" name="phone" id="phone">Phone</p>
+                  <p><input placeholder="Country" oninput="this.className = ''" name="Country" id="country">Country</p>
+                  <p><input placeholder="City" oninput="this.className = ''" name="City" id="city">City</p>
                </div>
-               <!-- <div class="tab">Login Info:
-                  <p><input placeholder="Username" oninput="this.className = ''" name="uname"></p>
-                  <p><input placeholder="Password" oninput="this.className = ''" name="pword" type="password"></p>
-                  <select id="country" name="country"></ <p>
-                     <option value="australia">I want to travel with a parcel</option>
-                     </p>
-                     <option value="canada">I am sending a parcel</option>
-                  </select>
-               </div> -->
+               
                <div style="overflow:auto;">
                   <div style="float:right;">
                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>

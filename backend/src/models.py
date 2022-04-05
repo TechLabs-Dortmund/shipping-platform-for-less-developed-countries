@@ -2,6 +2,7 @@
 
 from http.client import TOO_MANY_REQUESTS
 from operator import truediv
+import string
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
@@ -17,6 +18,8 @@ class User(Base):                            #SQLAlchemy model
     lastName = Column(String, index=True) 
     phone = Column(String, index=True) 
     email = Column(String, unique=True, index=True)
+    country = Column(String, index=True)
+    city = Column(String, index=True)
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
 
