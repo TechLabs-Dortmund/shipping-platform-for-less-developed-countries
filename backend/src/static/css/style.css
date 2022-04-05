@@ -28,7 +28,11 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
   background: #FFB923;
+=======
+  background: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 
 @-webkit-keyframes fadeIn {
@@ -55,15 +59,24 @@ section {
   margin-top: 1rem;
   padding: 1rem 3rem;
   display: inline-block;
+<<<<<<< HEAD
   border: 0.1rem solid #12465B;
   color: #12465B;
+=======
+  border: 0.1rem solid #512a10;
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   background: none;
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .link-btn:hover {
+<<<<<<< HEAD
   background: #12465B;
+=======
+  background: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   color: #fff;
 }
 
@@ -82,7 +95,11 @@ section {
 
 .header.active {
   padding: 2rem 0;
+<<<<<<< HEAD
   background: #FFB923;
+=======
+  background: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 .header .container .row{
   justify-content: space-between;
@@ -165,7 +182,11 @@ section {
 
 .login-form form .logo {
   font-size: 2.5rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   font-weight: bolder;
 }
 
@@ -180,7 +201,11 @@ section {
 .login-form form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
+<<<<<<< HEAD
   border: 0.1rem solid #12465B;
+=======
+  border: 0.1rem solid #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   font-size: 1.6rem;
   margin: 1rem 0;
 }
@@ -206,7 +231,11 @@ section {
 
 .login-form form .flex a {
   font-size: 1.5rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   margin-left: auto;
 }
 
@@ -263,7 +292,11 @@ section {
 
 .About span {
   font-size: 2.5rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 
 .about .title {
@@ -303,7 +336,11 @@ section {
 .about .icons-container .icons i {
   font-size: 4rem;
   margin-bottom: 1.5rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 
 .about .icons-container .icons h3 {
@@ -313,6 +350,7 @@ section {
 }
 
 
+<<<<<<< HEAD
 .options span {
   font-size: 2.5rem;
   color: #12465B;
@@ -350,6 +388,12 @@ section {
   font-size:10pt;
   color: #666;
   border: 1px solid grey 
+=======
+.services .container-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   }
 
 #regForm {
@@ -431,7 +475,11 @@ button:hover {
 .team .box-container {
   display: -ms-grid;
   display: grid;
+<<<<<<< HEAD
   -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+=======
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
 }
@@ -447,7 +495,11 @@ button:hover {
 }
 
 .team .box-container .box:hover .icons {
+<<<<<<< HEAD
   border-top: 0.1rem solid #12465B;
+=======
+  border-top: 0.1rem solid #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 
 .team .box-container .box .image {
@@ -504,7 +556,11 @@ button:hover {
 
 .team .box-container .box .icons span i {
   padding-right: .5rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
 }
 
 .contact {
@@ -554,7 +610,11 @@ button:hover {
 
 .footer .logo {
   font-size: 3rem;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   font-weight: bolder;
 }
 
@@ -579,12 +639,20 @@ button:hover {
   line-height: 5rem;
   font-size: 2rem;
   border: 0.1rem solid #512a10;
+<<<<<<< HEAD
   color: #12465B;
+=======
+  color: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   margin: 0 .3rem;
 }
 
 .footer .share a:hover {
+<<<<<<< HEAD
   background: #12465B;
+=======
+  background: #512a10;
+>>>>>>> 62653ba433728461bf0cdee9b5fd17556619d6aa
   color: #fff;
 }
 
