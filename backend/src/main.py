@@ -203,7 +203,7 @@ def delete_shipment(shipment_id: int = Query(..., description="The ID of the Shi
 
 # Auth management
 @app.post("/login")
-def login(login_data : LoginRequestModel) -> LoginResponseModel:
+def login(login_data : schemas.LoginRequestModel) -> schemas.LoginResponseModel:
     print(login_data)
     
 
