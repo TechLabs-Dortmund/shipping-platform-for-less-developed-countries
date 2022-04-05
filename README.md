@@ -25,23 +25,14 @@ After successful installation use the following command to run the project:
 
 ## Examples
 
-**Note-To be deleted!** *A brief overview on how to use the main functionalities of your project (does not have to be code) - Adding Picture of main landing page (frontend)?* 
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
-*suggestion for a start (picture of the current website still need to be added...)*
+The website includes general descriptions of the project (*About*) including the benefits and a descriptions of the functionalities as well as FAQs (*FAQ*). 
+There is a register and login function for users to sign up. Afterwards they can post delivery requests and offers using the post form. A third form was added for searching available delivery requests or offers, i.e. receiving existing posts from the database. This search function is prepared in the frontend and backend and will be fully integrated and will be integrated in the next steps. Furthermore, contact options such as a chat function as well as a user rating system will be added next.
 
 You can see the first design of the TraDel website here: 
 
 ![TraDel - Header](/assets/images/picture.png)
 
-The website includes general descriptions of the project (*About*) and FAQs (*FAQ*). 
-There is a register and login function as well a function for posting delivery requests and offers. A search function receiving posts from the database is already prepared and will be integrated in the frontend in the next steps.  
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)  
 
 
   
