@@ -12,15 +12,28 @@ The solution?
 
 In order to setup and run the project, please proceed as follows:
 
+Start by creating an isolated virtual command.
+
 ```bash
-  npm install my-project
+python -m venv venv
+.\venv\Scripts\activate.bat
+```
+
+```bash
+pip install -r requirements.txt
 ```
 
 After successful installation use the following command to run the project:
 
 ```bash
-  npm run
+uvicorn src.main:app --reload
 ```
+
+## Access
+
+After starting open the following URL: [http://127.0.0.1:8000/static/index.html](http://127.0.0.1:8000/static/index.html)
+
+For getting access to the FastAPI open the following URL: 127.0.0.1:8000/docs
 
 
 ## Examples
