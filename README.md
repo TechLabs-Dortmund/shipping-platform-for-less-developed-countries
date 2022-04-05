@@ -18,6 +18,7 @@ Start by creating an isolated virtual command.
 python -m venv venv
 .\venv\Scripts\activate.bat
 ```
+Install all requirements.
 
 ```bash
 pip install -r requirements.txt
