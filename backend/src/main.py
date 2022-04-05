@@ -43,44 +43,11 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory="src/static"), name="static")
 
 
-class Shipment(BaseModel):
-    name: str
-    name_recipient: str
-    destination: str
-    weight: float
-
-class UpdateShipment(BaseModel):
-    name: Optional[str] = None 
-    name_recipient: Optional[str] = None 
-    destination: Optional[str] = None 
-    weight: Optional[float] = None 
-
-class UserModel(BaseModel):
-    firstName: str
-    lastName: str
-    phone: str
-    email : str
-    password : str
-    # add the register data here 
-
-class LoginRequestModel(BaseModel):
-    email : str
-    password : str
-
-class LoginResponseModel(BaseModel):
-    successful : bool
-    user: Optional[UserModel] = None
-
-class RegisterRequestModel(UserModel):
-    pass
-    # register data here like phone
-
 
 # GET, POST, PUT(update information), DELETE 
 @app.get("/")
 def home():
    return {"Data": "Testing"}
-    #  return render_template ('index.html')
 
 #@app.get("/about")
 #def about():
@@ -91,12 +58,14 @@ def home():
 
 # users dictionary 
 users = {
-    "username@gmail.com":UserModel(
+    "username@gmail.com":schemas.UserModel(
         email = "username@gmail.com",
         password = "password1",
         firstName = "Bob",
         lastName = "Franklin",
-        phone = "888343" 
+        phone = "888343", 
+        country = "any",
+        city = "any"
     )
 } 
 
@@ -203,31 +172,33 @@ def delete_shipment(shipment_id: int = Query(..., description="The ID of the Shi
 
 # Auth management
 @app.post("/login")
-def login(login_data : LoginRequestModel) -> LoginResponseModel:
+def login(login_data : schemas.LoginRequestModel) -> schemas.LoginResponseModel:
     print(login_data)
     
-
     if login_data.email in users and login_data.password == users[login_data.email].password:
-        response = LoginResponseModel(successful=True, user=users[login_data.email])
+        response = schemas.LoginResponseModel(successful=True, user=users[login_data.email])
     else:
-        response = LoginResponseModel(successful=False)
+        response = schemas.LoginResponseModel(successful=False)
     
     return response
     
 
 
 @app.post("/register")
-def register(register_data : RegisterRequestModel) -> UserModel:
+def register(register_data : schemas.RegisterRequestModel) -> schemas.UserModel:
     print(register_data)
     
     if register_data.email in users:
         raise HTTPException(status_code=400, detail="User already exists.")
-    response = UserModel(
+    response = schemas.UserModel(
         email=register_data.email,
         password=register_data.password,
         firstName=register_data.firstName,
         lastName=register_data.lastName,
-        phone=register_data.phone
+        phone=register_data.phone,
+        country=register_data.country, 
+        city=register_data.city 
+
     )
     users[register_data.email] = response
 

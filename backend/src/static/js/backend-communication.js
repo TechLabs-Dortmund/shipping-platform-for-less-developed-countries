@@ -32,7 +32,10 @@ function post_register() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const phone = document.getElementById("phone").value;
-    const bodyPayload = JSON.stringify({firstName: firstName, lastName: lastName, email: email, password: password, phone: phone});
+    const country = document.getElementById("country").value;
+    const city = document.getElementById("city").value;
+    const bodyPayload = JSON.stringify({firstName: firstName, lastName: lastName, email: email,
+         password: password, phone: phone, country: country, city: city});
     axios.post(server + '/register', bodyPayload, {
             headers: {
             // Overwrite Axios's automatically set Content-Type
