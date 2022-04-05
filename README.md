@@ -32,9 +32,11 @@ You can see the first design of the TraDel website here:
 
 ![TraDel - Header](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/1_Tradel_Home.png)
 
-![TraDel - Header](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/1_Tradel_Home.png?raw=true) 
+![TraDel - About](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/2_Tradel_About.png) 
 
+![TraDel - About2](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/3_Tradel_About_Benefits.png)
 
+![TraDel - Options](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/4_Tradel_DeliveryOptions.png) 
 
   
 ## Roadmap
@@ -45,7 +47,7 @@ You can see the first design of the TraDel website here:
 - adding database using SQLite and database connection using fastAPI
 - updating frontend (updating colours, texts and search function)  - ONGOING
 
-- adding chat function - PLANNED
+- adding chat function & user rating system - PLANNED
 
   
 ## Authors
