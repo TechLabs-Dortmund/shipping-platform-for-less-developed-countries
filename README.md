@@ -30,9 +30,10 @@ There is a register and login function for users to sign up. Afterwards they can
 
 You can see the first design of the TraDel website here: 
 
-![TraDel - Header](/assets/images/picture.png)
+![TraDel - Header](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/1_Tradel_Home.png)
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)  
+![TraDel - Header](https://github.com/TechLabs-Dortmund/shipping-platform-for-less-developed-countries/blob/d1c197004209235952d9c872fd8330473d87fe5f/Screenshots/1_Tradel_Home.png?raw=true) 
+
 
 
   
