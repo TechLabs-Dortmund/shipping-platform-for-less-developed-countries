@@ -77,6 +77,7 @@ You can see the first design of the TraDel website here:
 ## Mentors
 - [@Florian](https://github.com/TheMerphin)
 - [@Tom](https://github.com/ScholliYT)
+- [@Nils](https://github.com/NJannasch)
 
 
   
